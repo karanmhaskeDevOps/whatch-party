@@ -1,0 +1,18 @@
+{
+    "name": "watch-party",
+    "version": "1.0.0",
+    "description": "A web application for synchronized video playback with video calling and chat functionality.",
+    "main": "server.js",
+    "scripts": {
+      "start": "node server.js"
+    },
+    "dependencies": {
+      "express": "^4.17.1",
+      "socket.io": "^4.1.3",
+      "uuid": "^8.3.2"
+    },
+    "devDependencies": {},
+    "author": "Your Name",
+    "license": "MIT"
+  }
+  

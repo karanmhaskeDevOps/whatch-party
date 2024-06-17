@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch Party with Video Calling</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Watch Party with Video Calling</h1>
+    <input type="file" id="videoFile" accept="video/*">
+    <video id="videoPlayer" controls></video>
+    
+    <div id="chat">
+        <div id="messages"></div>
+        <input type="text" id="messageInput" placeholder="Type a message...">
+        <button id="sendButton">Send</button>
+    </div>
+    
+    <div id="videoCall">
+        <video id="localVideo" autoplay muted></video>
+        <div id="remoteVideos"></div>
+    </div>
+    
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
